@@ -1,4 +1,4 @@
-
+[![Validate Repository Structure](https://github.com/ST10483413/Race_Day_App/actions/workflows/blank.yml/badge.svg)](https://github.com/ST10483413/Race_Day_App/actions/workflows/blank.yml)
 
 # Race_Day_App
 
@@ -138,7 +138,7 @@ RaceDay/
 The project uses GitHub Actions for continuous integration to validate repository structure and ensure required files are present.
 
 ### Workflow Status
-![CI Status](https://github.com/ST10483413/Race_Day_App/actions/workflows/validate.yml/badge.svg)
+[![Validate Repository Structure](https://github.com/ST10483413/Race_Day_App/actions/workflows/blank.yml/badge.svg)](https://github.com/ST10483413/Race_Day_App/actions/workflows/blank.yml)
 
 ### Automated Checks
 The workflow validates:
