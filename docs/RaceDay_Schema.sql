@@ -1,5 +1,5 @@
 
--- RaceDay Database Schema and Seed Data
+-- RaceDay Database Schema and DEMO Data
 
 -- Create the database
 CREATE DATABASE RaceDayDB;
@@ -21,7 +21,7 @@ CREATE TABLE Users (
 );
 
 
--- Organisers table (one-to-one with Users)
+-- Organisers table (one to one with Users)
 CREATE TABLE Organisers (
     OrganiserID INT IDENTITY(1,1) PRIMARY KEY,
     UserID INT NOT NULL UNIQUE FOREIGN KEY REFERENCES Users(UserID) ON DELETE CASCADE,
@@ -30,7 +30,7 @@ CREATE TABLE Organisers (
 );
 
 
--- Participants table (one-to-one with Users)
+-- Participants table (one to one with Users)
 CREATE TABLE Participants (
     ParticipantID INT IDENTITY(1,1) PRIMARY KEY,
     UserID INT NOT NULL UNIQUE FOREIGN KEY REFERENCES Users(UserID) ON DELETE CASCADE,
@@ -75,7 +75,7 @@ CREATE TABLE Enrollments (
 CREATE TABLE Results (
     ResultID INT IDENTITY(1,1) PRIMARY KEY,
     EnrollmentID INT NOT NULL UNIQUE FOREIGN KEY REFERENCES Enrollments(EnrollmentID) ON DELETE CASCADE,
-    FinishTime TIME NOT NULL,      -- e.g., '01:30:00'
+    FinishTime TIME NOT NULL,      -- e.g, '01:30:00'
     [Position] INT NOT NULL
 );
 
@@ -134,9 +134,9 @@ INSERT INTO Results (EnrollmentID, FinishTime, [Position]) VALUES
 (2, '00:48:32', 15);    -- Charlie's result for the 10km
 
 
--- ======================================================
--- 3. VERIFICATION QUERIES (optional – run to test)
--- ======================================================
+
+-- 3. VERIFICATION QUERIES TO RUN TEST 
+
 
 SELECT * FROM Users;
 SELECT * FROM Organisers;
