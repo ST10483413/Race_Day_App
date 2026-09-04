@@ -152,8 +152,8 @@ The workflow validates:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/RaceDay.git
-   cd RaceDay
+   git clone https://github.com/ST10483413/Race_Day_App.git
+   cd Race_Day_App
    ```
 
 2. **Set Up the Database**
@@ -171,7 +171,7 @@ The workflow validates:
 
 ## Video Walkthrough
 
-📺 **Planning and Setup Video**: [Watch on YouTube](https://youtu.be/your-video-link)
+📺 **Planning and Setup Video**: [Watch on YouTube]https://youtu.be/xlYn1jdpG24
 
 The video covers:
 1. ERD design decisions and entity relationships
